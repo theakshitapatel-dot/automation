@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoTech | Automation Solutions</title>
+  <link rel="stylesheet" href="cinderella.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+/* Video */
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+   object-fit: cover;
+  z-index: -1;
+}
+h1{text-align: center;
+color: white;}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url("https://t4.ftcdn.net/jpg/03/93/33/61/360_F_393336128_TBpWZmTC8tHdAXUThg7UmilSr4ULsw2C.jpg");
+  background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+  color: #eaeaea;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #0b0f1a;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  color: #00f2ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+              url("images/hero.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+.hero-text h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #00f2ff;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* SERVICES */
+.services {
+  padding: 80px;
+  text-align: center;
+}
+.service-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #12172b;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  gap: 60px;
+  padding: 80px;
+  align-items: center;
+}
+.about img {
+  width: 40%;
+  border-radius: 20px;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 80px;
+  background: #12172b;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #05070f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .service-box {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 40px;
+  }
+}
+.hero span{color: indigo;}
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <video autoplay muted loop style="z-index: -1;position: absolute;">
+      <source src="C:\Users\LENOVO\Downloads\25380-350507864_medium.mp4" type="video/mp4">
+      
+      
+    </video>
+
+<!-- NAVBAR -->
+<header>
+  <nav>
+    <h1 class="logo">Hi, I'm Akshita</h1>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="C:\Users\LENOVO\Documents\cover.jpeg">Resume</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Hi, I'm <span>Akshita </span></h2>
+    <p>I'm an extremely dedicated student and I'm willing to quickily adapt and learn my role and will provide my best to the corporation</p>
+    <a href="#services" class="btn">Explore Solutions</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <h2>Skills</h2>
+
+  <div class="service-box">
+    <div class="card">
+      <h3>AI ML Role</h3>
+      <p>AI incorporation, amking models, robotics integration.</p>
+    </div>
+
+    <div class="card">
+      <h3>Data Analysis</h3>
+      <p>data analytics and incorporating it in models</p>
+    </div>
+
+    <div class="card">
+      <h3>IoT Systems</h3>
+      <p>Connected sensors, monitoring, and control systems.</p>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Engineering Mindset</h3>
+      <p>I focus on writing clean, maintainable, and scalable code for real-world systems.</p>
+    </div>
+    <div class="card">
+      <h3>AI & Automation</h3>
+      <p>Building intelligent tools that automate workflows and solve meaningful problems.</p>
+    </div>
+    <div class="card">
+      <h3>Performance</h3>
+      <p>Optimized architectures and fast-loading applications with modern tech stack.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <img src="images/robot.jpg" alt="Automation Robot">
+  <div>
+    <h2>About </h2>
+    <p>
+      Ai automation delivers advanced  solutions that increase
+      productivity, reduce costs, and improve efficiency.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Get In Touch</h2>
+  <p>Email: theakshitapatel@gmail.com</p>
+  <p>Phone: +91 9109177612</p>
+</section>
+<section id="projects">
+  <h2 class="section-title">Selected Projects</h2>
+  <div class="grid">
+    <div class="card"><h3>AI SaaS Tool</h3><p>Intelligent automation platform built with modern stack.</p></div>
+    <div class="card"><h3>Analytics Dashboard</h3><p>Real-time data visualization and performance tracking system.</p></div>
+    <div class="card"><h3>Automation Engine</h3><p>Custom workflow automation for productivity optimization.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="grid">
+    <div class="card"><h3>Email</h3><p>theakshitapatel@email.com</p></div>
+    <div class="card"><h3>GitHub</h3><p>Github.com/akshita</p></div>
+    <div class="card"><h3>LinkedIn</h3><p><a href="www.linkedin.com/in/akshita-undefined-91b826372">linkedin/akshita</a></p></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Professional Portfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
